@@ -19,10 +19,15 @@ ReservationSystem basically demonstrate the SpringBoot Microservices capabilitie
 6. ReservationClient (API Gateway) - This service behave as API Gateway and provide the following facilities:
 
   6.1 List of reservations 
+  
   6.2 Adding only reservation record directly to Reservation Master via reservation-service 
+  
   6.3 List of Tickets 
+  
   6.4 Adding only ticket record directly to Ticket Master via ticket-service
+  
   6.5 create a booking via Choreography of services like Booking, Reservation and Ticket
+  
   
 7. Hystrix Dashbord - this component is use to see the visibility of various services 
 
