@@ -13,8 +13,11 @@ ReservationSystem basically demonstrate the SpringBoot Microservices capabilitie
 5. Booking Service - this service implement the booking service in reservation system. It uses events to complete the transaction which 
   
     5.1 first create a record for booking into it own in-memory database with a transaction ID 
+    
     5.2 second, inserts a record for reservation via reservation-service and
+    
     5.3 then deduct the tickets counts of reservation for that location into Tickets master db (in H2) via Ticket service.
+    
     
 6. ReservationClient (API Gateway) - This service behave as API Gateway and provide the following facilities:
 
