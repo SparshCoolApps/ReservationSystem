@@ -1,0 +1,11 @@
+zuul:
+routes:
+  reservation-service:
+    path: /reservation-service/**
+    serviceId: reservation-service
+
+reservation-service:
+ribbon:
+  listOfServers: ASHISVER02.corp.amdocs.com
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
